@@ -1,0 +1,418 @@
+fileFormatVersion: 2
+guid: 6433b34b1d7112b4ebf0f78551820e40
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: defaultTemplate_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 474
+        width: 92
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe78e160c3a8734786d16f86ed76f28
+      internalID: 911157826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultTemplate_3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 468
+        width: 102
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020924ef99be7a84a9ffe476fedbf4b4
+      internalID: 877605276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultTemplate_5
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 475
+        width: 91
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d271ffb150b93c4894a0bc31e479a61
+      internalID: -602381932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultTemplate_21
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 372
+        width: 129
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf9423a33d38544780ac16efa190ea8
+      internalID: -1868260091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultTemplate_25
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 368
+        width: 129
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c732ffd1561b6804c89c5d92ab7eace9
+      internalID: 49589631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultTemplate_27
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 222
+        width: 116
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eef30ec2882064478e9c9a66efc6871
+      internalID: 445662115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultTemplate_28
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 353
+        width: 85
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb997a12223866488dbda2af28ebf07
+      internalID: -1752827649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultTemplate_29
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 370
+        width: 117
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5e24afb36ef0640bb31adab8ca2151
+      internalID: 853353756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultTemplate_33
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 371
+        width: 117
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589884c39a855c84fbbddc385da1e512
+      internalID: -223073442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultTemplate_38
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 222
+        width: 117
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eaf9dd4bcd11484abbc5d0f5a2bdb4d
+      internalID: -1063306741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultTemplate_0
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 372
+        width: 93
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807b723c3fb072740a49e2c26a57ac60
+      internalID: 1105659605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      defaultTemplate_0: 1105659605
+      defaultTemplate_1: 911157826
+      defaultTemplate_10: 2133187623
+      defaultTemplate_11: -2141499333
+      defaultTemplate_12: 906715220
+      defaultTemplate_13: -1302136806
+      defaultTemplate_14: -73025546
+      defaultTemplate_15: -1749518909
+      defaultTemplate_16: 2028452464
+      defaultTemplate_17: -1211827297
+      defaultTemplate_18: 2012765147
+      defaultTemplate_19: 1946838602
+      defaultTemplate_2: -77122654
+      defaultTemplate_20: 307882096
+      defaultTemplate_21: -1868260091
+      defaultTemplate_22: -1063091090
+      defaultTemplate_23: 134386994
+      defaultTemplate_24: 508923077
+      defaultTemplate_25: 49589631
+      defaultTemplate_26: 391860156
+      defaultTemplate_27: 445662115
+      defaultTemplate_28: -1752827649
+      defaultTemplate_29: 853353756
+      defaultTemplate_3: 877605276
+      defaultTemplate_30: -351510946
+      defaultTemplate_31: -1903234372
+      defaultTemplate_32: 1301664603
+      defaultTemplate_33: -223073442
+      defaultTemplate_34: -1932835979
+      defaultTemplate_35: -1771194539
+      defaultTemplate_36: 1560506129
+      defaultTemplate_37: -545150684
+      defaultTemplate_38: -1063306741
+      defaultTemplate_39: 1093823449
+      defaultTemplate_4: 28040987
+      defaultTemplate_40: 446326333
+      defaultTemplate_41: 1079343671
+      defaultTemplate_42: -222983638
+      defaultTemplate_43: -1790389501
+      defaultTemplate_44: 1429015212
+      defaultTemplate_45: -1458984860
+      defaultTemplate_46: -1846317459
+      defaultTemplate_5: -602381932
+      defaultTemplate_6: -1338687526
+      defaultTemplate_7: 2054615345
+      defaultTemplate_8: 1594424114
+      defaultTemplate_9: 1089738514
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

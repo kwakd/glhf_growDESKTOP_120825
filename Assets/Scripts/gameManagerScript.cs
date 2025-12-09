@@ -1,0 +1,90 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEditor.Animations;
+
+
+
+public class gameManagerScript : MonoBehaviour
+{
+    public static gameManagerScript Instance;
+    public List<charAScript> totalCharList = new List<charAScript>();
+    public List<RuntimeAnimatorController> animControllerListEpic = new List<RuntimeAnimatorController>();
+    public List<RuntimeAnimatorController> animControllerListLegendary = new List<RuntimeAnimatorController>();
+    public Color[] randomColorListArray = {Color.red, Color.blue, Color.cyan, Color.gray, Color.green, Color.grey, Color.magenta, Color.red, Color.white, Color.yellow};
+    public charAScript testSpawn;
+
+    public bool calendarMenuToggle;
+    public bool detailMenuToggle;
+    public GameObject calendarMenu;
+
+    // Start is called before the first frame update
+    void Awake()
+    {
+        Instance = this;
+
+        calendarMenu.SetActive(false);
+        calendarMenuToggle = false;
+        detailMenuToggle = false;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            int rangeX = 2;
+            int rangeY = 5;
+            Vector2 randomPosition = new Vector2(
+            Random.Range(-rangeX, rangeX),
+            Random.Range(-rangeY, rangeY)
+            );
+            charAScript tempChar;
+            tempChar = Instantiate(testSpawn, randomPosition, Quaternion.identity);
+            totalCharList.Add(tempChar);
+        }
+
+        if (Input.GetKeyDown(KeyCode.O) && totalCharList.Count != 0)
+        {
+            //Debug.Log(totalCharList.Count);
+            totalCharList[totalCharList.Count - 1].GetComponent<charAScript>().DeleteCharacterA();
+        }
+
+        if (Input.GetKeyDown(KeyCode.W) && !detailMenuToggle)
+        {
+            ToggleCalendarMenu();
+        }
+
+    }
+
+    void ToggleCalendarMenu()
+    {
+        if(!calendarMenuToggle)
+        {
+            calendarMenu.SetActive(true);
+            //normalMenuText.enabled = false;
+            //sellMenuText.enabled = true;
+            calendarMenuToggle = true;
+        }
+        else
+        {
+            calendarMenu.SetActive(false);
+            //normalMenuText.enabled = true;
+            //sellMenuText.enabled = false;
+            calendarMenuToggle = false;
+            closeMenuScript.Instance.DeactivateExitButton();
+        }
+    }
+
+    public void OpenMenuButton()
+    {
+        calendarMenu.SetActive(true);
+        calendarMenuToggle = true;
+    }
+
+    public void DeleteCharacterButton()
+    {
+        totalCharList[calendarMenuScript.Instance.globalIndex].GetComponent<charAScript>().DeleteCharacterA();
+        closeMenuScript.Instance.ExitPage();
+    }
+}
