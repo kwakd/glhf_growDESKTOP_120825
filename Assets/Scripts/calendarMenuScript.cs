@@ -89,12 +89,12 @@ public class calendarMenuScript : MonoBehaviour
         gameManagerScript gmScript = FindObjectOfType<gameManagerScript>();
 
         int totalCharacters = gmScript.totalCharList.Count;
-        int startIndex = numPage * 32;
-        int charactersToShow = Mathf.Min(32, totalCharacters - startIndex);
+        int startIndex = numPage * 28;
+        int charactersToShow = Mathf.Min(28, totalCharacters - startIndex);
         //exitMenuButton.gameObject.SetActive(true);
 
         // Show/hide arrow buttons based on page count
-        bool multiplePages = totalCharacters > 32;
+        bool multiplePages = totalCharacters > 28;
         calendarLeftArrowButton.gameObject.SetActive(multiplePages);
         calendarRightArrowButton.gameObject.SetActive(multiplePages);
 
@@ -173,7 +173,7 @@ public class calendarMenuScript : MonoBehaviour
     void AddNumPage()
     {
         gameManagerScript gmScript = FindObjectOfType<gameManagerScript>();
-        int maxPages = Mathf.CeilToInt(gmScript.totalCharList.Count / 32f) - 1;
+        int maxPages = Mathf.CeilToInt(gmScript.totalCharList.Count / 28f) - 1;
         
         if(numPage >= maxPages)
         {
