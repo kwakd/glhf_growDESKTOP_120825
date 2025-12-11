@@ -17,6 +17,7 @@ public class gameManagerScript : MonoBehaviour
     public bool calendarMenuToggle;
     public bool detailMenuToggle;
     public GameObject calendarMenu;
+    public GameObject DeletePage;
 
     // Start is called before the first frame update
     void Awake()
@@ -44,16 +45,16 @@ public class gameManagerScript : MonoBehaviour
             totalCharList.Add(tempChar);
         }
 
-        if (Input.GetKeyDown(KeyCode.O) && totalCharList.Count != 0)
-        {
-            //Debug.Log(totalCharList.Count);
-            totalCharList[totalCharList.Count - 1].GetComponent<charAScript>().DeleteCharacterA();
-        }
+        // if (Input.GetKeyDown(KeyCode.O) && totalCharList.Count != 0)
+        // {
+        //     //Debug.Log(totalCharList.Count);
+        //     totalCharList[totalCharList.Count - 1].GetComponent<charAScript>().DeleteCharacterA();
+        // }
 
-        if (Input.GetKeyDown(KeyCode.W) && !detailMenuToggle)
-        {
-            ToggleCalendarMenu();
-        }
+        // if (Input.GetKeyDown(KeyCode.W) && !detailMenuToggle)
+        // {
+        //     ToggleCalendarMenu();
+        // }
 
     }
 
@@ -82,6 +83,10 @@ public class gameManagerScript : MonoBehaviour
         calendarMenuToggle = true;
     }
 
+    public void OpenDeleteCharacterPageButton()
+    {
+        DeletePage.SetActive(true);
+    }
     public void DeleteCharacterButton()
     {
         totalCharList[calendarMenuScript.Instance.globalIndex].GetComponent<charAScript>().DeleteCharacterA();

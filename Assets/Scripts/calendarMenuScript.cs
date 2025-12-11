@@ -51,7 +51,6 @@ public class calendarMenuScript : MonoBehaviour
 
         //userNumToTotalNum.enabled = true;
         //userNumToTotalNum.gameObject.SetActive(true);
-        userNumToTotalNum.gameObject.SetActive(true);
         UpdateCalendarMenuList();
         closeMenuScript.Instance.ActivateExitImage();
     }
@@ -97,6 +96,7 @@ public class calendarMenuScript : MonoBehaviour
         bool multiplePages = totalCharacters > 28;
         calendarLeftArrowButton.gameObject.SetActive(multiplePages);
         calendarRightArrowButton.gameObject.SetActive(multiplePages);
+        userNumToTotalNum.gameObject.SetActive(multiplePages);
 
         // Only show characters that exist on this page
         for (int i = 0; i < charactersToShow; i++)

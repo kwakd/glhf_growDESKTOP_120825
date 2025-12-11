@@ -10,6 +10,7 @@ public class closeMenuScript : MonoBehaviour
 
     public GameObject detailMenuPageClose;
     public GameObject calendarMenuPageClose;
+    public GameObject deletePageClose;
     public GameObject exitMenuButton;
     public Image exitImage;
 
@@ -32,9 +33,9 @@ public class closeMenuScript : MonoBehaviour
         
     }
 
-    void CloseBothWindows()
+    public void CloseDeleteWindow()
     {
-        
+        deletePageClose.gameObject.SetActive(false);
     }
 
     public void ExitPage()
@@ -42,6 +43,7 @@ public class closeMenuScript : MonoBehaviour
         Debug.Log("Exit Page button Pressed");
         detailMenuPageClose.gameObject.SetActive(false);
         calendarMenuPageClose.gameObject.SetActive(false);
+        deletePageClose.gameObject.SetActive(false);
         gameManagerScript.Instance.detailMenuToggle = false;
         gameManagerScript.Instance.calendarMenuToggle = false;
         DeactivateExitButton();
