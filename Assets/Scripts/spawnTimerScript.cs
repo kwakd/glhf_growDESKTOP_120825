@@ -10,11 +10,8 @@ public class SpawnTimerScript : MonoBehaviour
     public Button spawnButton;
     public TextMeshProUGUI buttonText; // Text inside the button
     
-    private const string LAST_SPAWN_TIME_KEY = "LastSpawnTime";
-    //private const float SPAWN_COOLDOWN_HOURS = 24f;
-    // 30 seconds for quick testing
-    private const float SPAWN_COOLDOWN_HOURS = 0.00833f;
-    private DateTime lastSpawnTime;
+    private const string LAST_SPAWN_DATE_KEY = "LastSpawnDate";
+    private DateTime lastSpawnDate;
     private bool canSpawn = true;
 
     void Awake()
@@ -31,7 +28,7 @@ public class SpawnTimerScript : MonoBehaviour
 
     void Start()
     {
-        LoadLastSpawnTime();
+        LoadLastSpawnDate();
         
         if (spawnButton != null)
         {
@@ -44,18 +41,24 @@ public class SpawnTimerScript : MonoBehaviour
     void Update()
     {
         UpdateButtonDisplay();
+        
+        // Press Q to reset timer (for testing/debugging)
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            ResetTimer();
+        }
     }
 
-    void LoadLastSpawnTime()
+    void LoadLastSpawnDate()
     {
-        if (PlayerPrefs.HasKey(LAST_SPAWN_TIME_KEY))
+        if (PlayerPrefs.HasKey(LAST_SPAWN_DATE_KEY))
         {
-            string lastSpawnString = PlayerPrefs.GetString(LAST_SPAWN_TIME_KEY);
-            lastSpawnTime = DateTime.Parse(lastSpawnString);
+            string lastSpawnString = PlayerPrefs.GetString(LAST_SPAWN_DATE_KEY);
+            lastSpawnDate = DateTime.Parse(lastSpawnString);
             
-            // Check if 24 hours have passed
-            TimeSpan timeSinceLastSpawn = DateTime.Now - lastSpawnTime;
-            canSpawn = timeSinceLastSpawn.TotalHours >= SPAWN_COOLDOWN_HOURS;
+            // Check if it's a new day (past midnight)
+            DateTime today = DateTime.Today; // Gets today's date at 00:00:00
+            canSpawn = lastSpawnDate.Date < today;
         }
         else
         {
@@ -72,7 +75,7 @@ public class SpawnTimerScript : MonoBehaviour
             if (buttonText != null)
             {
                 buttonText.text = "Spawn a 'moment'";
-                buttonText.color = Color.white; // or any color you prefer
+                buttonText.color = Color.white;
             }
             
             if (spawnButton != null)
@@ -88,13 +91,14 @@ public class SpawnTimerScript : MonoBehaviour
         }
         else
         {
-            // Calculate remaining time
-            TimeSpan timeSinceLastSpawn = DateTime.Now - lastSpawnTime;
-            TimeSpan timeRemaining = TimeSpan.FromHours(SPAWN_COOLDOWN_HOURS) - timeSinceLastSpawn;
+            // Calculate time until midnight
+            DateTime now = DateTime.Now;
+            DateTime nextMidnight = DateTime.Today.AddDays(1); // Tomorrow at 00:00:00
+            TimeSpan timeRemaining = nextMidnight - now;
             
             if (timeRemaining.TotalSeconds <= 0)
             {
-                // Time's up!
+                // It's past midnight!
                 canSpawn = true;
                 UpdateButtonDisplay();
                 return;
@@ -151,7 +155,7 @@ public class SpawnTimerScript : MonoBehaviour
         }
         else
         {
-            Debug.Log("Cannot spawn yet! Wait for timer to finish.");
+            Debug.Log("Cannot spawn yet! Wait until midnight.");
         }
     }
 
@@ -174,16 +178,17 @@ public class SpawnTimerScript : MonoBehaviour
             gmScript.totalCharList.Add(tempChar);
         }
         
-        // Save the spawn time
-        lastSpawnTime = DateTime.Now;
-        PlayerPrefs.SetString(LAST_SPAWN_TIME_KEY, lastSpawnTime.ToString());
+        // Save the spawn date
+        lastSpawnDate = DateTime.Now;
+        PlayerPrefs.SetString(LAST_SPAWN_DATE_KEY, lastSpawnDate.ToString());
         PlayerPrefs.Save();
         
         // Update state
         canSpawn = false;
         UpdateButtonDisplay();
         
-        Debug.Log("Character spawned! Next spawn available at: " + lastSpawnTime.AddHours(SPAWN_COOLDOWN_HOURS));
+        DateTime nextMidnight = DateTime.Today.AddDays(1);
+        Debug.Log("Character spawned! Next spawn available at midnight: " + nextMidnight);
     }
 
     public bool CanSpawn()
@@ -195,8 +200,9 @@ public class SpawnTimerScript : MonoBehaviour
     {
         if (canSpawn) return TimeSpan.Zero;
         
-        TimeSpan timeSinceLastSpawn = DateTime.Now - lastSpawnTime;
-        TimeSpan timeRemaining = TimeSpan.FromHours(SPAWN_COOLDOWN_HOURS) - timeSinceLastSpawn;
+        DateTime now = DateTime.Now;
+        DateTime nextMidnight = DateTime.Today.AddDays(1);
+        TimeSpan timeRemaining = nextMidnight - now;
         
         return timeRemaining.TotalSeconds > 0 ? timeRemaining : TimeSpan.Zero;
     }
@@ -204,7 +210,7 @@ public class SpawnTimerScript : MonoBehaviour
     // Optional: Reset timer for testing
     public void ResetTimer()
     {
-        PlayerPrefs.DeleteKey(LAST_SPAWN_TIME_KEY);
+        PlayerPrefs.DeleteKey(LAST_SPAWN_DATE_KEY);
         PlayerPrefs.Save();
         canSpawn = true;
         UpdateButtonDisplay();

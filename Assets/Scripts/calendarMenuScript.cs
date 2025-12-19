@@ -109,6 +109,11 @@ public class calendarMenuScript : MonoBehaviour
             string tempDay = gmScript.totalCharList[charIndex].timeNowDay.ToString();
             string tempYear = gmScript.totalCharList[charIndex].timeNowYear.ToString();
 
+            Image dateImage = g.transform.GetChild(0).GetComponent<Image>();
+            
+            // Set to preserve aspect ratio
+            dateImage.preserveAspect = true;
+
             // Determine which sprite character is using
             if (gmScript.totalCharList[charIndex].firstTierint <= 95)
             {
@@ -204,6 +209,11 @@ public class calendarMenuScript : MonoBehaviour
         detailPageMenu.SetActive(true);
         calendarLeftArrowButton.gameObject.SetActive(false);
         calendarRightArrowButton.gameObject.SetActive(false);
+
+        Image detailImage = detailPageMenu.transform.GetChild(0).GetComponent<Image>();
+        
+        // Set to preserve aspect ratio for detail page
+        detailImage.preserveAspect = true;
 
         // Determine which sprite character is using
         if(gmScript.totalCharList[charIndex].firstTierint <= 95)
