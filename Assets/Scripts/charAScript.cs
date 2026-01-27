@@ -24,6 +24,9 @@ public class charAScript : MonoBehaviour
     public int firstTierint;
     public int secondTierint;
 
+    public byte[] customImageData;
+    public bool hasCustomImage;
+
     private Rigidbody2D thisCharRB;
     private SpriteRenderer thisCharSR;
     private Animator thisCharAnim;
@@ -287,5 +290,16 @@ public class charAScript : MonoBehaviour
         }
 
         characterFirstSpawn = true;
+
+        // No custom image on first spawn
+        hasCustomImage = false;
+        customImageData = null;
+    }
+
+    // Method to set custom image
+    public void SetCustomImage(byte[] imageData)
+    {
+        customImageData = imageData;
+        hasCustomImage = (imageData != null && imageData.Length > 0);
     }
 }

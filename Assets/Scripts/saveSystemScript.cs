@@ -42,6 +42,16 @@ public class saveSystemScript : MonoBehaviour
             FileStream stream = new FileStream(path + i, FileMode.Create);
             charAData data = new charAData(characterList[i]);
 
+            // DEBUG: Check if image data exists
+            if (data.hasCustomImage && data.customImageData != null)
+            {
+                Debug.Log($"Saving character {i} WITH custom image. Size: {data.customImageData.Length} bytes");
+            }
+            else
+            {
+                Debug.Log($"Saving character {i} WITHOUT custom image");
+            }
+
             formatter.Serialize(stream, data);
             stream.Close();
         }
@@ -98,6 +108,11 @@ public class saveSystemScript : MonoBehaviour
                 characterA.timeNowYear = data.timeNowYear;
                 characterA.timeNowTime = data.timeNowTime;
 
+                // Load custom image data
+                characterA.customImageData = data.customImageData;
+                characterA.hasCustomImage = data.hasCustomImage;
+
+
                 //adds character to the in-game list
                 gameManager.totalCharList.Add(characterA);
             }
@@ -106,5 +121,6 @@ public class saveSystemScript : MonoBehaviour
                 Debug.LogError("Path not found in " + path + i);
             }
         }
+        Debug.Log("Characters loaded! Total: " + characterCount);
     }
 }

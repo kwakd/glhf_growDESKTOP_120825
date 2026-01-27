@@ -15,6 +15,9 @@ public class charAData
     public int timeNowYear;
     public string timeNowTime;
 
+    public byte[] customImageData;
+    public bool hasCustomImage;
+
     public charAData(charAScript charA)
     {
         charNameText = charA.charNameText;
@@ -26,5 +29,7 @@ public class charAData
         timeNowDay = charA.timeNowDay;
         timeNowYear = charA.timeNowYear;
         timeNowTime = charA.timeNowTime;
+        customImageData = charA.customImageData;
+        hasCustomImage = charA.hasCustomImage;
     }
 }
