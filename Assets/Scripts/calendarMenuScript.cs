@@ -86,7 +86,8 @@ public class calendarMenuScript : MonoBehaviour
         {
             g = Instantiate(calendarTemplateCopy, transform);
             
-            int charIndex = i + startIndex;
+            // Reverse the order - show newest first
+            int charIndex = (totalCharacters - 1) - (i + startIndex);
             
             string tempMonth = gmScript.totalCharList[charIndex].timeNowMonth.ToString();
             string tempDay = gmScript.totalCharList[charIndex].timeNowDay.ToString();
