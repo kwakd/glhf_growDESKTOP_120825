@@ -167,7 +167,7 @@ public class SpawnTimerScript : MonoBehaviour
         gameManagerScript gmScript = FindObjectOfType<gameManagerScript>();
         if (gmScript != null)
         {
-            int rangeX = 2;
+            int rangeX = 9;
             int rangeY = 5;
             Vector2 randomPosition = new Vector2(
                 UnityEngine.Random.Range(-rangeX, rangeX),

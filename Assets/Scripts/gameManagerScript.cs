@@ -34,7 +34,7 @@ public class gameManagerScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            int rangeX = 2;
+            int rangeX = 9;
             int rangeY = 5;
             Vector2 randomPosition = new Vector2(
             Random.Range(-rangeX, rangeX),

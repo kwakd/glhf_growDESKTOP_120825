@@ -263,27 +263,23 @@ public class charAScript : MonoBehaviour
         charLongText = "this character was made at " + timeNowTime;
 
         // firstTier Roll - TIER
-        // Legendary 1% Epic 4% Uncommon 20% Normal 75%
-        firstTierint = Random.Range(0, 101);
-        //common (at 95 right now but after implementing uncommon change it to 75)
-        if (firstTierint <= 75)
+        // Legendary 5% Epic 20% Normal 75%
+        firstTierint = Random.Range(0, 101); // Returns 0-100
+
+        // Common 75% (0-74)
+        if (firstTierint <= 74)
         {
             secondTierint = Random.Range(0, gameManagerScript.Instance.randomColorListArray.Length);
             Debug.Log("Common Tier - HIT");
         }
-        //uncommon
-        // else if (firstTierint > 75 && firstTierint <= 78)
-        // {
-
-        // }
-        //epic
-        else if (firstTierint > 95 && firstTierint <= 99)
+        // Epic 20% (75-94)
+        else if (firstTierint >= 75 && firstTierint <= 94)
         {
             secondTierint = Random.Range(0, gameManagerScript.Instance.animControllerListEpic.Count);
             Debug.Log("Epic Tier - HIT " + secondTierint);
         }
-        //legendary
-        else if (firstTierint == 100)
+        // Legendary 5% (95-99)
+        else if (firstTierint >= 95 && firstTierint <= 99)
         {
             secondTierint = Random.Range(0, gameManagerScript.Instance.animControllerListLegendary.Count);
             Debug.Log("Legendary Tier - HIT " + secondTierint);
