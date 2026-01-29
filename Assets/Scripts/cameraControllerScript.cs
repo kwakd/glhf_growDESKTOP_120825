@@ -3,35 +3,42 @@ using UnityEngine;
 public class cameraControllerScript : MonoBehaviour
 {
     [Header("Movement Settings")]
-    public float moveSpeed = 5f;
+    public float moveSpeed = 7f;
     
     [Header("Boundary Settings")]
-    public float minX = -10f;
-    public float maxX = 10f;
-    public float minY = -10f;
-    public float maxY = 10f;
+    public float minX = -7f;
+    public float maxX = 7f;
+    public float minY = -4.5f;
+    public float maxY = 9f;
     
     [Header("Zoom Level 1 Boundary Settings (1.25x)")]
-    public float zoom1MinX = -7.5f;
-    public float zoom1MaxX = 7.5f;
-    public float zoom1MinY = -7.5f;
-    public float zoom1MaxY = 7.5f;
+    public float zoom1MinX = -9f;
+    public float zoom1MaxX = 9f;
+    public float zoom1MinY = -5.5f;
+    public float zoom1MaxY = 10f;
     
     [Header("Zoom Level 2 Boundary Settings (1.5x)")]
-    public float zoom2MinX = -5f;
-    public float zoom2MaxX = 5f;
-    public float zoom2MinY = -5f;
-    public float zoom2MaxY = 5f;
+    public float zoom2MinX = -10.25f;
+    public float zoom2MaxX = 10.25f;
+    public float zoom2MinY = -6f;
+    public float zoom2MaxY = 10f;
+    
+    [Header("Zoom Level 3 Boundary Settings (0.5x - Zoomed Out)")]
+    public float zoom3MinX = 0f;
+    public float zoom3MaxX = 0f;
+    public float zoom3MinY = -1f;
+    public float zoom3MaxY = 7f;
     
     [Header("Zoom Settings")]
     public float zoomSpeed = 2f;
     public float defaultZoom = 5f;      // Normal view
     public float zoom1Size = 4f;        // 1.25x zoomed in
     public float zoom2Size = 3.33f;     // 1.5x zoomed in
+    public float zoom3Size = 8.5f;       // 0.5x zoomed out
     
     private Camera cam;
     private float targetZoom;
-    private int zoomLevel = 0; // 0 = normal, 1 = 1.25x, 2 = 1.5x
+    private int zoomLevel = 0; // 0 = normal, 1 = 1.25x, 2 = 1.5x, 3 = 0.5x
 
     void Start()
     {
@@ -104,6 +111,13 @@ public class cameraControllerScript : MonoBehaviour
             currentMinY = zoom2MinY;
             currentMaxY = zoom2MaxY;
         }
+        else if (zoomLevel == 3)
+        {
+            currentMinX = zoom3MinX;
+            currentMaxX = zoom3MaxX;
+            currentMinY = zoom3MinY;
+            currentMaxY = zoom3MaxY;
+        }
         
         // Clamp position within boundaries
         newPosition.x = Mathf.Clamp(newPosition.x, currentMinX, currentMaxX);
@@ -123,7 +137,7 @@ public class cameraControllerScript : MonoBehaviour
             zoomLevel++;
             
             // Cycle back to normal after max zoom
-            if (zoomLevel > 2)
+            if (zoomLevel > 3)
             {
                 zoomLevel = 0;
             }
@@ -142,6 +156,10 @@ public class cameraControllerScript : MonoBehaviour
                 case 2:
                     targetZoom = zoom2Size; // 1.5x
                     Debug.Log("Zoom: 1.5x");
+                    break;
+                case 3:
+                    targetZoom = zoom3Size; // 0.5x (zoomed out)
+                    Debug.Log("Zoom: 0.5x (Zoomed Out)");
                     break;
             }
         }

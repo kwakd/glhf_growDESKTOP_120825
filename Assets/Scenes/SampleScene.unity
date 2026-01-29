@@ -1663,7 +1663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d505d71036a83d743a82c59c52c840c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 7
   minX: -7
   maxX: 7
   minY: -4.5
@@ -1676,10 +1676,15 @@ MonoBehaviour:
   zoom2MaxX: 10.25
   zoom2MinY: -6
   zoom2MaxY: 10
+  zoom3MinX: 0
+  zoom3MaxX: 0
+  zoom3MinY: -1
+  zoom3MaxY: 7
   zoomSpeed: 2
   defaultZoom: 5
   zoom1Size: 4
   zoom2Size: 3.33
+  zoom3Size: 8.5
 --- !u!1 &550374000
 GameObject:
   m_ObjectHideFlags: 0
@@ -2516,6 +2521,8 @@ MonoBehaviour:
   spacingX: 1.5
   spacingY: 1.5
   startPosition: {x: -8, y: 3}
+  moveSpeed: 5
+  arrivalThreshold: 0.1
 --- !u!4 &753371249
 Transform:
   m_ObjectHideFlags: 0
