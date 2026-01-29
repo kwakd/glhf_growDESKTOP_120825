@@ -87,8 +87,8 @@ public class saveSystemScript : MonoBehaviour
                 stream.Close();
 
                 // spawns then randomly.
-                int rangeX = 9;
-                int rangeY = 5;
+                int rangeX = 15;
+                int rangeY = 7;
                 Vector3 randomPosition = new Vector3(
                 Random.Range(-rangeX, rangeX),
                 Random.Range(-rangeY, rangeY),
