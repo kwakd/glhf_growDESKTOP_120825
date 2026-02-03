@@ -158,7 +158,8 @@ public class charAScript : MonoBehaviour
         else if(charStatus >= 9 && charStatus <= 9)
         {
             int charStatusSpecial;
-            if (firstTierint == 100)
+            bool isEpicSpecial = gameObject.CompareTag("EpicSpecial");
+            if (firstTierint >= 95 && firstTierint <= 99 || isEpicSpecial)
             {
                 charStatusSpecial = Random.Range(0, 3);
             }

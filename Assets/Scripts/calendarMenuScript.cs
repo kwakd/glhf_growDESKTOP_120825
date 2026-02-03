@@ -57,7 +57,7 @@ public class calendarMenuScript : MonoBehaviour
                 Destroy(transform.GetChild(i).gameObject);
             }
         }
-        //userNumToTotalNum.gameObject.SetActive(false);
+        userNumToTotalNum.gameObject.SetActive(false);
         calendarLeftArrowButton.gameObject.SetActive(false);
         calendarRightArrowButton.gameObject.SetActive(false);
     }
@@ -73,21 +73,60 @@ public class calendarMenuScript : MonoBehaviour
         GameObject g;
         gameManagerScript gmScript = FindObjectOfType<gameManagerScript>();
 
+        if (gmScript == null)
+        {
+            Debug.LogError("GameManagerScript not found!");
+            return;
+        }
+
+        if (gmScript.totalCharList == null)
+        {
+            Debug.LogError("Total character list is null!");
+            return;
+        }
+
         int totalCharacters = gmScript.totalCharList.Count;
+        
+        // Check if there are any characters at all
+        if (totalCharacters == 0)
+        {
+            Debug.Log("No characters to display in calendar");
+            calendarLeftArrowButton.gameObject.SetActive(false);
+            calendarRightArrowButton.gameObject.SetActive(false);
+            return;
+        }
+        
         int startIndex = numPage * 55;
+        
+        // Make sure we're not on an invalid page
+        if (startIndex >= totalCharacters)
+        {
+            Debug.LogWarning($"Page {numPage} is beyond available characters. Resetting to page 0");
+            numPage = 0;
+            startIndex = 0;
+        }
+        
         int charactersToShow = Mathf.Min(55, totalCharacters - startIndex);
 
         bool multiplePages = totalCharacters > 55;
         calendarLeftArrowButton.gameObject.SetActive(multiplePages);
         calendarRightArrowButton.gameObject.SetActive(multiplePages);
-        //userNumToTotalNum.gameObject.SetActive(multiplePages);
 
         for (int i = 0; i < charactersToShow; i++)
         {
             g = Instantiate(calendarTemplateCopy, transform);
             
             // Reverse the order - show newest first
-            int charIndex = (totalCharacters - 1) - (i + startIndex);
+            // FIXED: Use (startIndex + i) not (i + startIndex) for correct calculation
+            int charIndex = (totalCharacters - 1) - (startIndex + i);
+            
+            // Safety check to make sure index is valid
+            if (charIndex < 0 || charIndex >= totalCharacters)
+            {
+                Debug.LogError($"Invalid character index: {charIndex}. Total characters: {totalCharacters}, startIndex: {startIndex}, i: {i}");
+                Destroy(g);
+                continue;
+            }
             
             string tempMonth = gmScript.totalCharList[charIndex].timeNowMonth.ToString();
             string tempDay = gmScript.totalCharList[charIndex].timeNowDay.ToString();
@@ -102,19 +141,48 @@ public class calendarMenuScript : MonoBehaviour
             if (gmScript.totalCharList[charIndex].firstTierint <= 74)
             {
                 dateImage.sprite = baseSprite;
-                dateImage.color = gmScript.randomColorListArray[gmScript.totalCharList[charIndex].secondTierint];
+                int colorIndex = gmScript.totalCharList[charIndex].secondTierint;
+                if (colorIndex >= 0 && colorIndex < gmScript.randomColorListArray.Length)
+                {
+                    dateImage.color = gmScript.randomColorListArray[colorIndex];
+                }
+                else
+                {
+                    dateImage.color = Color.white;
+                    Debug.LogWarning($"Color index {colorIndex} out of range. Using white.");
+                }
             }
             //epic
             else if (gmScript.totalCharList[charIndex].firstTierint >= 75 && gmScript.totalCharList[charIndex].firstTierint <= 94)
             {
-                dateImage.sprite = imageListEpic[gmScript.totalCharList[charIndex].secondTierint];
-                dateImage.color = Color.white;
+                int spriteIndex = gmScript.totalCharList[charIndex].secondTierint;
+                if (spriteIndex >= 0 && spriteIndex < imageListEpic.Count)
+                {
+                    dateImage.sprite = imageListEpic[spriteIndex];
+                    dateImage.color = Color.white;
+                }
+                else
+                {
+                    dateImage.sprite = baseSprite;
+                    dateImage.color = Color.white;
+                    Debug.LogError($"Epic sprite index {spriteIndex} out of range! Epic list has {imageListEpic.Count} sprites.");
+                }
             }
             //legendary
             else if(gmScript.totalCharList[charIndex].firstTierint >= 95 && gmScript.totalCharList[charIndex].firstTierint <= 99)
             {
-                dateImage.sprite = imageListLegendary[gmScript.totalCharList[charIndex].secondTierint];
-                dateImage.color = Color.white;
+                int spriteIndex = gmScript.totalCharList[charIndex].secondTierint;
+                if (spriteIndex >= 0 && spriteIndex < imageListLegendary.Count)
+                {
+                    dateImage.sprite = imageListLegendary[spriteIndex];
+                    dateImage.color = Color.white;
+                }
+                else
+                {
+                    dateImage.sprite = baseSprite;
+                    dateImage.color = Color.white;
+                    Debug.LogError($"Legendary sprite index {spriteIndex} out of range! Legendary list has {imageListLegendary.Count} sprites.");
+                }
             }
             
             g.transform.GetChild(1).GetComponent<TMP_Text>().text = tempMonth + "/" + tempDay + "/" + tempYear;
@@ -161,7 +229,7 @@ public class calendarMenuScript : MonoBehaviour
     void AddNumPage()
     {
         gameManagerScript gmScript = FindObjectOfType<gameManagerScript>();
-        int maxPages = Mathf.CeilToInt(gmScript.totalCharList.Count / 55f) - 1;
+        int maxPages = Mathf.CeilToInt(gmScript.totalCharList.Count / 28f) - 1;
         
         if(numPage >= maxPages)
         {

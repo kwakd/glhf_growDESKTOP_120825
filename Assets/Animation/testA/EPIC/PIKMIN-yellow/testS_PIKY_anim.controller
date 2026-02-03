@@ -56,7 +56,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 274ddacc81ba9374bb2a41bc5ffbb348, type: 2}
+  m_Motion: {fileID: 7400000, guid: b32211ff1647e1d458d0c2ae3ff9f9dd, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -210,7 +210,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 8f71e29b8087c3d46b0734f8fc46505c, type: 2}
+  m_Motion: {fileID: 7400000, guid: a34bde7123fb47d459028a1e8887fbd0, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -348,7 +348,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 45d5cd6557912bb4eb08f453d23c569c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 647e39d762f5dfe4b96450cbee6041d9, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -445,7 +445,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: testS_BLANKA_special1
+  m_Name: testS_PIKY_special1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -460,7 +460,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 9c29f8a39c7103c4b82536fc8161c238, type: 2}
+  m_Motion: {fileID: 7400000, guid: 2ef288e24adfe5a47b4d981d227d42ee, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -519,7 +519,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: fe6b79754a1c66f4fbd32662816e8a2b, type: 2}
+  m_Motion: {fileID: 7400000, guid: cd14cf05a1e4a184f9854be19a8c43a4, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
