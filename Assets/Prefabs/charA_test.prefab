@@ -172,7 +172,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.61333334, y: 0.6933333}
+    oldSize: {x: 1.0222223, y: 1.1555556}
     newSize: {x: 0.92, y: 1.04}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -194,8 +194,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charNameText: 
-  createDate: 
-  createTime: 
+  charLongText: 
+  timeNowMonth: 0
+  timeNowDay: 0
+  timeNowYear: 0
+  timeNowTime: 
   charParagraphText: 
   dateAndTimeText: 
   shinyCharacter: 0
@@ -203,3 +206,5 @@ MonoBehaviour:
   characterChoiceTime: 0
   firstTierint: 0
   secondTierint: 0
+  customImageData: 
+  hasCustomImage: 0

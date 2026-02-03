@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 90
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,280 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: pikminYellowEpic_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 615
+        width: 114
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff37c293bea79cb4b9adff60a4c50a8d
+      internalID: 163350285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminYellowEpic_1
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 615
+        width: 110
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df8e0ebdd3678440aac41c14cf0adae
+      internalID: -1336563169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminYellowEpic_2
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 621
+        width: 104
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974128c9317baf144843eb98465f91d1
+      internalID: -792417514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminYellowEpic_3
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 434
+        width: 91
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d70800abf5c18409542dc1bdbda332
+      internalID: -1651198152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminYellowEpic_4
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 448
+        width: 146
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1189a103b236643a847293e61829e0
+      internalID: 415248059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminYellowEpic_5
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 439
+        width: 154
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2584242157020bf40a5249c7edec99ec
+      internalID: 202574089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminYellowEpic_6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 270
+        width: 102
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c75e97c403ef3948b8700059d42085a
+      internalID: 356510469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminYellowEpic_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 270
+        width: 149
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f271bfad26cf104ca001b75fdea2db1
+      internalID: 934482963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminYellowEpic_9
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 261
+        width: 147
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3b9af981855a44d80af9d3c7eb5f13
+      internalID: -1460511839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminYellowEpic_10
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 96
+        width: 124
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8984d6a10afeeff4e8953cf06aa0b941
+      internalID: 1621895320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminYellowEpic_11
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 96
+        width: 116
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2209ca7f8fce1ce478a2ff0d7a8d95df
+      internalID: -59518434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminYellowEpic_12
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 106
+        width: 87
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc103d386d45ea4e95fd46ce7d8c961
+      internalID: -1315250424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminYellowEpic_13
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 106
+        width: 86
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadb48b54e405804298c6239dc9c1e81
+      internalID: 1604055087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +405,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pikminYellowEpic_0: 163350285
+      pikminYellowEpic_1: -1336563169
+      pikminYellowEpic_10: 1621895320
+      pikminYellowEpic_11: -59518434
+      pikminYellowEpic_12: -1315250424
+      pikminYellowEpic_13: 1604055087
+      pikminYellowEpic_2: -792417514
+      pikminYellowEpic_3: -1651198152
+      pikminYellowEpic_4: 415248059
+      pikminYellowEpic_5: 202574089
+      pikminYellowEpic_6: 356510469
+      pikminYellowEpic_7: -1850343658
+      pikminYellowEpic_8: 934482963
+      pikminYellowEpic_9: -1460511839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -99,19 +99,19 @@ public class calendarMenuScript : MonoBehaviour
             dateImage.preserveAspect = true;
 
             // Determine which sprite character is using
-            if (gmScript.totalCharList[charIndex].firstTierint <= 95)
+            if (gmScript.totalCharList[charIndex].firstTierint <= 74)
             {
                 dateImage.sprite = baseSprite;
                 dateImage.color = gmScript.randomColorListArray[gmScript.totalCharList[charIndex].secondTierint];
             }
             //epic
-            else if (gmScript.totalCharList[charIndex].firstTierint > 95 && gmScript.totalCharList[charIndex].firstTierint <= 99)
+            else if (gmScript.totalCharList[charIndex].firstTierint >= 75 && gmScript.totalCharList[charIndex].firstTierint <= 94)
             {
                 dateImage.sprite = imageListEpic[gmScript.totalCharList[charIndex].secondTierint];
                 dateImage.color = Color.white;
             }
             //legendary
-            else if(gmScript.totalCharList[charIndex].firstTierint == 100)
+            else if(gmScript.totalCharList[charIndex].firstTierint >= 95 && gmScript.totalCharList[charIndex].firstTierint <= 99)
             {
                 dateImage.sprite = imageListLegendary[gmScript.totalCharList[charIndex].secondTierint];
                 dateImage.color = Color.white;
@@ -194,19 +194,19 @@ public class calendarMenuScript : MonoBehaviour
         detailImage.preserveAspect = true;
 
         // Determine which sprite character is using
-        if(gmScript.totalCharList[charIndex].firstTierint <= 95)
+        if(gmScript.totalCharList[charIndex].firstTierint <= 74)
         {
             detailImage.color = gmScript.randomColorListArray[gmScript.totalCharList[charIndex].secondTierint];
             detailImage.sprite = baseSprite;
         }
         //epic
-        else if(gmScript.totalCharList[charIndex].firstTierint > 95 && gmScript.totalCharList[charIndex].firstTierint <= 99)
+        else if(gmScript.totalCharList[charIndex].firstTierint >= 75 && gmScript.totalCharList[charIndex].firstTierint <= 94)
         {
             detailImage.sprite = imageListEpic[gmScript.totalCharList[charIndex].secondTierint];
             detailImage.color = Color.white;
         }
         //legendary
-        else if(gmScript.totalCharList[charIndex].firstTierint == 100)
+        else if(gmScript.totalCharList[charIndex].firstTierint >= 95 && gmScript.totalCharList[charIndex].firstTierint <= 99)
         {
             detailImage.sprite = imageListLegendary[gmScript.totalCharList[charIndex].secondTierint];
             detailImage.color = Color.white;

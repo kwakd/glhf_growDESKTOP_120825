@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 90
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,280 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: pikminRedEpic_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 615
+        width: 102
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957f3575e5300394f82f268ee0582b09
+      internalID: -745479842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminRedEpic_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 615
+        width: 121
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2585f46cc3f0b0b4db4c063b2e61aa1a
+      internalID: 93221925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminRedEpic_2
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 620
+        width: 91
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31543bd1cec6e5d46aa6da0ab216f444
+      internalID: -298093810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminRedEpic_3
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 434
+        width: 86
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc8580c7e8026e4d9bead9b2a8b1dd2
+      internalID: 1094705615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminRedEpic_4
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 448
+        width: 170
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6458ae928c73dc24da43217cca9315eb
+      internalID: 1332773355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminRedEpic_5
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 439
+        width: 149
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a116a4056cca404abb05ddc0c44b0bf
+      internalID: 691758143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminRedEpic_6
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 270
+        width: 99
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4b9449052c2bd4badec6661c5890f4
+      internalID: -1981613113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminRedEpic_7
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 270
+        width: 164
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e49c4bb8e755e345b3d5afbb7b23d0e
+      internalID: 600468383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminRedEpic_8
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 261
+        width: 181
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c933a6035732a2a499c0072d322b8e7a
+      internalID: -125364465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminRedEpic_9
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 96
+        width: 125
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a80f0049c942040a6fb300e5fe40f8
+      internalID: 2144329818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminRedEpic_10
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 96
+        width: 116
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4afb123b8d786c34ca53c87f3edc88d3
+      internalID: 620234515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminRedEpic_11
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 106
+        width: 104
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e6f363e469e7c4cbf7ab1b6c2cb74f
+      internalID: -1229711492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pikminRedEpic_12
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 106
+        width: 103
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a848d1a53f3618441927b96dc81fc4f3
+      internalID: 2028957104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +405,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pikminRedEpic_0: -745479842
+      pikminRedEpic_1: 93221925
+      pikminRedEpic_10: 620234515
+      pikminRedEpic_11: -1229711492
+      pikminRedEpic_12: 2028957104
+      pikminRedEpic_2: -298093810
+      pikminRedEpic_3: 1094705615
+      pikminRedEpic_4: 1332773355
+      pikminRedEpic_5: 691758143
+      pikminRedEpic_6: -1981613113
+      pikminRedEpic_7: 600468383
+      pikminRedEpic_8: -125364465
+      pikminRedEpic_9: 2144329818
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

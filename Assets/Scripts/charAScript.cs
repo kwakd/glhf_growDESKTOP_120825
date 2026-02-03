@@ -200,8 +200,11 @@ public class charAScript : MonoBehaviour
         thisCharAnim.SetFloat("charMoveMagnitude", thisCharRB.velocity.magnitude);
         thisCharAnim.SetBool("charDanceAnim1", charDanceAnim1Bool);
         thisCharAnim.SetBool("charDanceAnim2", charDanceAnim2Bool);
+
+        bool isEpicSpecial = gameObject.CompareTag("EpicSpecial");
+
         // legendary anim
-        if (firstTierint == 100)
+        if ((firstTierint >= 95 && firstTierint <= 99) || isEpicSpecial)
         {
             thisCharAnim.SetBool("charSpecialAnim1", charSpecialAnim1Bool);
         }
@@ -217,7 +220,7 @@ public class charAScript : MonoBehaviour
 
     void SetCharacterController()
     {
-        if (firstTierint <= 95)
+        if (firstTierint <= 74)
         {
             //Debug.Log("Common Tier - HIT - 2");
             thisCharSR.color = gameManagerScript.Instance.randomColorListArray[secondTierint];
@@ -228,14 +231,25 @@ public class charAScript : MonoBehaviour
 
         // }
         //epic
-        else if (firstTierint > 95 && firstTierint <= 99)
+        else if (firstTierint >= 75 && firstTierint <= 94)
         {
             //Debug.Log("Epic Tier - HIT - 2 " + secondTierint);
             thisCharAnim.runtimeAnimatorController = gameManagerScript.Instance.animControllerListEpic[secondTierint];
 
+            switch (secondTierint)
+            {
+                case 5:
+                case 6:
+                case 7:
+                    gameObject.tag = "EpicSpecial";
+                    break;
+                default:
+                    break;
+            }
+
         }
         //legendary
-        else if (firstTierint == 100)
+        else if (firstTierint >= 95 && firstTierint <= 99)
         {
             //Debug.Log("Legendary Tier - HIT - 2 " + secondTierint);
             thisCharAnim.runtimeAnimatorController = gameManagerScript.Instance.animControllerListLegendary[secondTierint];
