@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 77223c7b3592d174baa6c235ee2759ca
+guid: 953b07b0fd2f17d4c9caea769ccbbb00
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: costcoEpic_0
+      name: minecraftLavaEpic_0
       rect:
         serializedVersion: 2
         x: 83
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b963257d012e4d43897c7e56670ad23
-      internalID: -1773553544
+      spriteID: 1911ff47e9ad1d34586f06b737dfb997
+      internalID: -107207031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_1
+      name: minecraftLavaEpic_1
       rect:
         serializedVersion: 2
         x: 286
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad545342e9fa32848ac74db33d840226
-      internalID: -1504258825
+      spriteID: 19dab59bb763ea349bfafd4231d9ecda
+      internalID: -1259744904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_2
+      name: minecraftLavaEpic_2
       rect:
         serializedVersion: 2
         x: 494
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab9e3e1199b40c5418d035c2314afd8d
-      internalID: 1820237829
+      spriteID: b55f408afe82b584abc942de8b080bb9
+      internalID: -1121563462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_3
+      name: minecraftLavaEpic_3
       rect:
         serializedVersion: 2
         x: 84
-        y: 431
+        y: 434
         width: 86
-        height: 106
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,19 +200,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bfb4e76a0ab8c845b8cf34d55fd3cf9
-      internalID: 1839216014
+      spriteID: c161386c91ca5f343a41abe8d6217386
+      internalID: -188215865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_4
+      name: minecraftLavaEpic_4
       rect:
         serializedVersion: 2
         x: 285
         y: 448
-        width: 118
+        width: 117
         height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -221,40 +221,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 262d6ef6b29f18142b606ea1ccf78a01
-      internalID: -261316945
+      spriteID: f76e746e771a28044990dcf4b4ef310d
+      internalID: 157371883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_5
+      name: minecraftLavaEpic_5
       rect:
         serializedVersion: 2
         x: 494
-        y: 437
+        y: 439
         width: 131
-        height: 92
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 884a01314afdb324196f832968aa7e6b
-      internalID: -1794483729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: costcoEpic_7
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 270
-        width: 96
         height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -263,19 +242,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a23fe557e17aca4989e14ec8ea1c007
-      internalID: -904214925
+      spriteID: a49ad71d4b5045540beba4fefcdf64f8
+      internalID: -1867615431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_9
+      name: minecraftLavaEpic_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 270
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617d7ddc7e7d8994fa07470c2f508f8c
+      internalID: -900141072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minecraftLavaEpic_7
       rect:
         serializedVersion: 2
         x: 292
         y: 270
-        width: 118
+        width: 117
         height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -284,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aecd50847d0415c41a72b06d0151357f
-      internalID: -485318848
+      spriteID: 0606083fd72a1934d8fb7a178abe4986
+      internalID: -382469172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_10
+      name: minecraftLavaEpic_8
       rect:
         serializedVersion: 2
         x: 495
@@ -305,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a51112b52a46684fa0db228dd464e8c
-      internalID: -645944122
+      spriteID: 45198105aab42ca44a9a692e2c051686
+      internalID: 1904873672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_11
+      name: minecraftLavaEpic_9
       rect:
         serializedVersion: 2
         x: 83
@@ -326,20 +326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abbec622e6b799a4880ef1402f09178c
-      internalID: 565122150
+      spriteID: 8b0abfc278aa71f4cac6b6ae60c7ed5b
+      internalID: -1936199435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_12
+      name: minecraftLavaEpic_10
       rect:
         serializedVersion: 2
         x: 274
         y: 96
         width: 116
-        height: 126
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,8 +347,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 516e6b207d2c76a4298bf538f0e74ecb
-      internalID: -1979423389
+      spriteID: 698cd8ca865fd7d46ac2297b2b73f71f
+      internalID: 166162250
       vertices: []
       indices: 
       edges: []
@@ -364,19 +364,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      costcoEpic_0: -1773553544
-      costcoEpic_1: -1504258825
-      costcoEpic_10: -645944122
-      costcoEpic_11: 565122150
-      costcoEpic_12: -1979423389
-      costcoEpic_2: 1820237829
-      costcoEpic_3: 1839216014
-      costcoEpic_4: -261316945
-      costcoEpic_5: -1794483729
-      costcoEpic_6: 765057192
-      costcoEpic_7: -904214925
-      costcoEpic_8: -334262476
-      costcoEpic_9: -485318848
+      minecraftLavaEpic_0: -107207031
+      minecraftLavaEpic_1: -1259744904
+      minecraftLavaEpic_10: 166162250
+      minecraftLavaEpic_2: -1121563462
+      minecraftLavaEpic_3: -188215865
+      minecraftLavaEpic_4: 157371883
+      minecraftLavaEpic_5: -1867615431
+      minecraftLavaEpic_6: -900141072
+      minecraftLavaEpic_7: -382469172
+      minecraftLavaEpic_8: 1904873672
+      minecraftLavaEpic_9: -1936199435
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

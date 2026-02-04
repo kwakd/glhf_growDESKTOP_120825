@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 77223c7b3592d174baa6c235ee2759ca
+guid: c956f19de907c25479b1d9e21b922bc7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: costcoEpic_0
+      name: foodToastEpic_0
       rect:
         serializedVersion: 2
         x: 83
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b963257d012e4d43897c7e56670ad23
-      internalID: -1773553544
+      spriteID: abb2e5d55ec988e4e887a18ea10f8a9e
+      internalID: 981300475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_1
+      name: foodToastEpic_1
       rect:
         serializedVersion: 2
         x: 286
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad545342e9fa32848ac74db33d840226
-      internalID: -1504258825
+      spriteID: a60441c068c1dd64faf66225a874bed6
+      internalID: 1053998837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_2
+      name: foodToastEpic_2
       rect:
         serializedVersion: 2
         x: 494
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab9e3e1199b40c5418d035c2314afd8d
-      internalID: 1820237829
+      spriteID: fd6be8778618d704f8367a82e6ed6c19
+      internalID: 81889246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_3
+      name: foodToastEpic_3
       rect:
         serializedVersion: 2
         x: 84
-        y: 431
+        y: 434
         width: 86
-        height: 106
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,19 +200,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bfb4e76a0ab8c845b8cf34d55fd3cf9
-      internalID: 1839216014
+      spriteID: 646c1e592b34b9d42a58ba8844a8fa2d
+      internalID: 429171346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_4
+      name: foodToastEpic_4
       rect:
         serializedVersion: 2
         x: 285
         y: 448
-        width: 118
+        width: 117
         height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -221,40 +221,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 262d6ef6b29f18142b606ea1ccf78a01
-      internalID: -261316945
+      spriteID: e403fa06526bd6c408a243716f57b944
+      internalID: 157541181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_5
+      name: foodToastEpic_5
       rect:
         serializedVersion: 2
         x: 494
-        y: 437
+        y: 439
         width: 131
-        height: 92
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 884a01314afdb324196f832968aa7e6b
-      internalID: -1794483729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: costcoEpic_7
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 270
-        width: 96
         height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -263,19 +242,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a23fe557e17aca4989e14ec8ea1c007
-      internalID: -904214925
+      spriteID: 6848ec8770a066c419b1b277527ad23e
+      internalID: -2143771151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_9
+      name: foodToastEpic_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 270
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed2480e6a61a950418efdc7b97c1e3ab
+      internalID: -1303102880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foodToastEpic_7
       rect:
         serializedVersion: 2
         x: 292
         y: 270
-        width: 118
+        width: 117
         height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -284,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aecd50847d0415c41a72b06d0151357f
-      internalID: -485318848
+      spriteID: 967bab42d12603f41a7f96e25dc841ff
+      internalID: 1935443616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_10
+      name: foodToastEpic_8
       rect:
         serializedVersion: 2
         x: 495
@@ -305,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a51112b52a46684fa0db228dd464e8c
-      internalID: -645944122
+      spriteID: 82f55143772524a4ab4527853788b7a5
+      internalID: 1641278534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_11
+      name: foodToastEpic_9
       rect:
         serializedVersion: 2
         x: 83
@@ -326,20 +326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abbec622e6b799a4880ef1402f09178c
-      internalID: 565122150
+      spriteID: 5a1c189cf3a124d4b8acf6a698f636a9
+      internalID: 1468065376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_12
+      name: foodToastEpic_10
       rect:
         serializedVersion: 2
         x: 274
         y: 96
         width: 116
-        height: 126
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,8 +347,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 516e6b207d2c76a4298bf538f0e74ecb
-      internalID: -1979423389
+      spriteID: 80090031f95895949ac98cfe330f9c5a
+      internalID: 92095241
       vertices: []
       indices: 
       edges: []
@@ -364,19 +364,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      costcoEpic_0: -1773553544
-      costcoEpic_1: -1504258825
-      costcoEpic_10: -645944122
-      costcoEpic_11: 565122150
-      costcoEpic_12: -1979423389
-      costcoEpic_2: 1820237829
-      costcoEpic_3: 1839216014
-      costcoEpic_4: -261316945
-      costcoEpic_5: -1794483729
-      costcoEpic_6: 765057192
-      costcoEpic_7: -904214925
-      costcoEpic_8: -334262476
-      costcoEpic_9: -485318848
+      foodToastEpic_0: 981300475
+      foodToastEpic_1: 1053998837
+      foodToastEpic_10: 92095241
+      foodToastEpic_2: 81889246
+      foodToastEpic_3: 429171346
+      foodToastEpic_4: 157541181
+      foodToastEpic_5: -2143771151
+      foodToastEpic_6: -1303102880
+      foodToastEpic_7: 1935443616
+      foodToastEpic_8: 1641278534
+      foodToastEpic_9: 1468065376
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

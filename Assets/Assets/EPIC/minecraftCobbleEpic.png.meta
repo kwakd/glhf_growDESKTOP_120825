@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 77223c7b3592d174baa6c235ee2759ca
+guid: a61b1a4d87ff54143a1d7a0a8f0d7f93
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: costcoEpic_0
+      name: minecraftCobbleEpic_0
       rect:
         serializedVersion: 2
         x: 83
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b963257d012e4d43897c7e56670ad23
-      internalID: -1773553544
+      spriteID: c2ed7c39b2d361a47843176770e764c8
+      internalID: -2130892741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_1
+      name: minecraftCobbleEpic_1
       rect:
         serializedVersion: 2
         x: 286
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad545342e9fa32848ac74db33d840226
-      internalID: -1504258825
+      spriteID: 484548dbc90f90a42a3e12b99194324a
+      internalID: 1656859067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_2
+      name: minecraftCobbleEpic_2
       rect:
         serializedVersion: 2
         x: 494
         y: 620
-        width: 91
-        height: 109
+        width: 98
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab9e3e1199b40c5418d035c2314afd8d
-      internalID: 1820237829
+      spriteID: 4c4bfa03232433048899559fc76c892d
+      internalID: 338952882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_3
+      name: minecraftCobbleEpic_3
       rect:
         serializedVersion: 2
         x: 84
-        y: 431
+        y: 434
         width: 86
-        height: 106
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bfb4e76a0ab8c845b8cf34d55fd3cf9
-      internalID: 1839216014
+      spriteID: 510caa541aaeabe458603fee0604ed1f
+      internalID: 213122449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_4
+      name: minecraftCobbleEpic_4
       rect:
         serializedVersion: 2
         x: 285
-        y: 448
-        width: 118
-        height: 81
+        y: 446
+        width: 117
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,40 +221,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 262d6ef6b29f18142b606ea1ccf78a01
-      internalID: -261316945
+      spriteID: 1785544cf76ce31479c0cfc8acf0a1b9
+      internalID: 930586403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_5
+      name: minecraftCobbleEpic_5
       rect:
         serializedVersion: 2
         x: 494
-        y: 437
+        y: 439
         width: 131
-        height: 92
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 884a01314afdb324196f832968aa7e6b
-      internalID: -1794483729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: costcoEpic_7
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 270
-        width: 96
         height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -263,19 +242,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a23fe557e17aca4989e14ec8ea1c007
-      internalID: -904214925
+      spriteID: 893124b9cc8b19b4cb4bb77f2d2f4954
+      internalID: 89077674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_9
+      name: minecraftCobbleEpic_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 270
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae2a85e525e751418d93c2749ae7c1d
+      internalID: 386968802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minecraftCobbleEpic_7
       rect:
         serializedVersion: 2
         x: 292
         y: 270
-        width: 118
+        width: 117
         height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -284,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aecd50847d0415c41a72b06d0151357f
-      internalID: -485318848
+      spriteID: 6318a3e4c43e2f04a8b5302ec1755819
+      internalID: 1647902172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_10
+      name: minecraftCobbleEpic_8
       rect:
         serializedVersion: 2
         x: 495
@@ -305,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a51112b52a46684fa0db228dd464e8c
-      internalID: -645944122
+      spriteID: a7b0325f396b3e64cb6d1a04ab1b1f91
+      internalID: 906347239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_11
+      name: minecraftCobbleEpic_9
       rect:
         serializedVersion: 2
         x: 83
@@ -326,20 +326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abbec622e6b799a4880ef1402f09178c
-      internalID: 565122150
+      spriteID: 37d43d4a7b02db74180f8d16ef5db29e
+      internalID: 1667476243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_12
+      name: minecraftCobbleEpic_10
       rect:
         serializedVersion: 2
         x: 274
         y: 96
         width: 116
-        height: 126
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,8 +347,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 516e6b207d2c76a4298bf538f0e74ecb
-      internalID: -1979423389
+      spriteID: 925d4ef953fdcf04ea2860e6e2db2465
+      internalID: 1859697688
       vertices: []
       indices: 
       edges: []
@@ -364,19 +364,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      costcoEpic_0: -1773553544
-      costcoEpic_1: -1504258825
-      costcoEpic_10: -645944122
-      costcoEpic_11: 565122150
-      costcoEpic_12: -1979423389
-      costcoEpic_2: 1820237829
-      costcoEpic_3: 1839216014
-      costcoEpic_4: -261316945
-      costcoEpic_5: -1794483729
-      costcoEpic_6: 765057192
-      costcoEpic_7: -904214925
-      costcoEpic_8: -334262476
-      costcoEpic_9: -485318848
+      minecraftCobbleEpic_0: -2130892741
+      minecraftCobbleEpic_1: 1656859067
+      minecraftCobbleEpic_10: 1859697688
+      minecraftCobbleEpic_2: 338952882
+      minecraftCobbleEpic_3: 213122449
+      minecraftCobbleEpic_4: 930586403
+      minecraftCobbleEpic_5: 89077674
+      minecraftCobbleEpic_6: 386968802
+      minecraftCobbleEpic_7: 1647902172
+      minecraftCobbleEpic_8: 906347239
+      minecraftCobbleEpic_9: 1667476243
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

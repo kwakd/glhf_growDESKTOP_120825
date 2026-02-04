@@ -121,7 +121,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ariGreenteaEpic_0
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 615
+        width: 90
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41bf8fe673aeec4d94f0259c3b9ca3c
+      internalID: -1214649713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ariGreenteaEpic_1
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 615
+        width: 95
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660275d89d940734ab37751894610a62
+      internalID: -706698956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ariGreenteaEpic_2
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 620
+        width: 91
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f4ef22e0c32aa488f30a19ba68cea0
+      internalID: -640807026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ariGreenteaEpic_3
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 431
+        width: 87
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0276e9606719dd349ab0048f7e4680a5
+      internalID: 278986604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ariGreenteaEpic_4
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 443
+        width: 116
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782f3d20028b31143b4fb09db74a32ac
+      internalID: 510323687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ariGreenteaEpic_6
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 440
+        width: 131
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c251e585717ad748902294052aff6af
+      internalID: 1049523120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ariGreenteaEpic_8
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 270
+        width: 97
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ff01277528d9f46a9ea56cfc2c6069
+      internalID: 19260513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ariGreenteaEpic_10
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 267
+        width: 117
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d2c5178c4e35a44a80d755e2f62a90
+      internalID: -1961761764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ariGreenteaEpic_11
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 261
+        width: 130
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9d5cfb66ec88443aa91adfb5fa45a7
+      internalID: -1934963784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ariGreenteaEpic_12
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 96
+        width: 115
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59f8493befd3004d82882c681224266
+      internalID: -884488176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ariGreenteaEpic_13
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 96
+        width: 116
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781fcbc8c02bf3e40905a650e826a5ab
+      internalID: -45876687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +363,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ariGreenteaEpic_0: -1214649713
+      ariGreenteaEpic_1: -706698956
+      ariGreenteaEpic_10: -1961761764
+      ariGreenteaEpic_11: -1934963784
+      ariGreenteaEpic_12: -884488176
+      ariGreenteaEpic_13: -45876687
+      ariGreenteaEpic_2: -640807026
+      ariGreenteaEpic_3: 278986604
+      ariGreenteaEpic_4: 510323687
+      ariGreenteaEpic_5: 75327187
+      ariGreenteaEpic_6: 1049523120
+      ariGreenteaEpic_7: 970908536
+      ariGreenteaEpic_8: 19260513
+      ariGreenteaEpic_9: -634309284
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

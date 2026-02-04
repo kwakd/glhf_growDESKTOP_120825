@@ -138,7 +138,7 @@ public class calendarMenuScript : MonoBehaviour
             dateImage.preserveAspect = true;
 
             // Determine which sprite character is using
-            if (gmScript.totalCharList[charIndex].firstTierint <= 74)
+            if (gmScript.totalCharList[charIndex].firstTierint <= 59)
             {
                 dateImage.sprite = baseSprite;
                 int colorIndex = gmScript.totalCharList[charIndex].secondTierint;
@@ -153,7 +153,7 @@ public class calendarMenuScript : MonoBehaviour
                 }
             }
             //epic
-            else if (gmScript.totalCharList[charIndex].firstTierint >= 75 && gmScript.totalCharList[charIndex].firstTierint <= 94)
+            else if (gmScript.totalCharList[charIndex].firstTierint >= 60 && gmScript.totalCharList[charIndex].firstTierint <= 89)
             {
                 int spriteIndex = gmScript.totalCharList[charIndex].secondTierint;
                 if (spriteIndex >= 0 && spriteIndex < imageListEpic.Count)
@@ -169,7 +169,7 @@ public class calendarMenuScript : MonoBehaviour
                 }
             }
             //legendary
-            else if(gmScript.totalCharList[charIndex].firstTierint >= 95 && gmScript.totalCharList[charIndex].firstTierint <= 99)
+            else if(gmScript.totalCharList[charIndex].firstTierint >= 90 && gmScript.totalCharList[charIndex].firstTierint <= 99)
             {
                 int spriteIndex = gmScript.totalCharList[charIndex].secondTierint;
                 if (spriteIndex >= 0 && spriteIndex < imageListLegendary.Count)
@@ -262,19 +262,19 @@ public class calendarMenuScript : MonoBehaviour
         detailImage.preserveAspect = true;
 
         // Determine which sprite character is using
-        if(gmScript.totalCharList[charIndex].firstTierint <= 74)
+        if(gmScript.totalCharList[charIndex].firstTierint <= 59)
         {
             detailImage.color = gmScript.randomColorListArray[gmScript.totalCharList[charIndex].secondTierint];
             detailImage.sprite = baseSprite;
         }
         //epic
-        else if(gmScript.totalCharList[charIndex].firstTierint >= 75 && gmScript.totalCharList[charIndex].firstTierint <= 94)
+        else if(gmScript.totalCharList[charIndex].firstTierint >= 60 && gmScript.totalCharList[charIndex].firstTierint <= 89)
         {
             detailImage.sprite = imageListEpic[gmScript.totalCharList[charIndex].secondTierint];
             detailImage.color = Color.white;
         }
         //legendary
-        else if(gmScript.totalCharList[charIndex].firstTierint >= 95 && gmScript.totalCharList[charIndex].firstTierint <= 99)
+        else if(gmScript.totalCharList[charIndex].firstTierint >= 90 && gmScript.totalCharList[charIndex].firstTierint <= 99)
         {
             detailImage.sprite = imageListLegendary[gmScript.totalCharList[charIndex].secondTierint];
             detailImage.color = Color.white;

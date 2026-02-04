@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 77223c7b3592d174baa6c235ee2759ca
+guid: f2bf7eee1ee097d40bf0581fd93c42a2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: costcoEpic_0
+      name: colaEpic_0
       rect:
         serializedVersion: 2
         x: 83
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b963257d012e4d43897c7e56670ad23
-      internalID: -1773553544
+      spriteID: 9c8e350d759d76247a17de1d78e3ad99
+      internalID: 1738461502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_1
+      name: colaEpic_1
       rect:
         serializedVersion: 2
         x: 286
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad545342e9fa32848ac74db33d840226
-      internalID: -1504258825
+      spriteID: 3241e77468ac94e4097306440e7ab414
+      internalID: -1989249703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_2
+      name: colaEpic_2
       rect:
         serializedVersion: 2
         x: 494
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab9e3e1199b40c5418d035c2314afd8d
-      internalID: 1820237829
+      spriteID: 2f2d56cc3f7e57b48a2612a987720307
+      internalID: -1650111983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_3
+      name: colaEpic_3
       rect:
         serializedVersion: 2
         x: 84
-        y: 431
+        y: 434
         width: 86
-        height: 106
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,19 +200,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bfb4e76a0ab8c845b8cf34d55fd3cf9
-      internalID: 1839216014
+      spriteID: 91e379272eeee764c9eb11f4e2203851
+      internalID: -351040491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_4
+      name: colaEpic_4
       rect:
         serializedVersion: 2
         x: 285
         y: 448
-        width: 118
+        width: 117
         height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -221,40 +221,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 262d6ef6b29f18142b606ea1ccf78a01
-      internalID: -261316945
+      spriteID: 331557f436da0f648a415b9bb0dca9e3
+      internalID: 1697723607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_5
+      name: colaEpic_5
       rect:
         serializedVersion: 2
         x: 494
-        y: 437
+        y: 439
         width: 131
-        height: 92
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 884a01314afdb324196f832968aa7e6b
-      internalID: -1794483729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: costcoEpic_7
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 270
-        width: 96
         height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -263,19 +242,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a23fe557e17aca4989e14ec8ea1c007
-      internalID: -904214925
+      spriteID: b667644908c2a14489854799e3275bc3
+      internalID: -1411244351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_9
+      name: colaEpic_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 270
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c9dfb7e12a1234eaf410f3c92050e2
+      internalID: -318847999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colaEpic_7
       rect:
         serializedVersion: 2
         x: 292
         y: 270
-        width: 118
+        width: 117
         height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -284,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aecd50847d0415c41a72b06d0151357f
-      internalID: -485318848
+      spriteID: ff1b54e79a5acf149811b251f28e9cbc
+      internalID: -1648223632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_10
+      name: colaEpic_8
       rect:
         serializedVersion: 2
         x: 495
@@ -305,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a51112b52a46684fa0db228dd464e8c
-      internalID: -645944122
+      spriteID: 9340641b2c7ff524ababdd5fff84a705
+      internalID: 1141664562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_11
+      name: colaEpic_9
       rect:
         serializedVersion: 2
         x: 83
@@ -326,20 +326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abbec622e6b799a4880ef1402f09178c
-      internalID: 565122150
+      spriteID: 00dbaafd6a2f4344eb81e11fa7f2a7a8
+      internalID: -766597654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_12
+      name: colaEpic_10
       rect:
         serializedVersion: 2
         x: 274
         y: 96
         width: 116
-        height: 126
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,8 +347,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 516e6b207d2c76a4298bf538f0e74ecb
-      internalID: -1979423389
+      spriteID: e4e61f903124f0744a666e6d5f4861d4
+      internalID: -2041030732
       vertices: []
       indices: 
       edges: []
@@ -364,19 +364,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      costcoEpic_0: -1773553544
-      costcoEpic_1: -1504258825
-      costcoEpic_10: -645944122
-      costcoEpic_11: 565122150
-      costcoEpic_12: -1979423389
-      costcoEpic_2: 1820237829
-      costcoEpic_3: 1839216014
-      costcoEpic_4: -261316945
-      costcoEpic_5: -1794483729
-      costcoEpic_6: 765057192
-      costcoEpic_7: -904214925
-      costcoEpic_8: -334262476
-      costcoEpic_9: -485318848
+      colaEpic_0: 1738461502
+      colaEpic_1: -1989249703
+      colaEpic_10: -2041030732
+      colaEpic_2: -1650111983
+      colaEpic_3: -351040491
+      colaEpic_4: 1697723607
+      colaEpic_5: -1411244351
+      colaEpic_6: -318847999
+      colaEpic_7: -1648223632
+      colaEpic_8: 1141664562
+      colaEpic_9: -766597654
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

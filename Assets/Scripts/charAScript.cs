@@ -205,7 +205,7 @@ public class charAScript : MonoBehaviour
         bool isEpicSpecial = gameObject.CompareTag("EpicSpecial");
 
         // legendary anim
-        if ((firstTierint >= 95 && firstTierint <= 99) || isEpicSpecial)
+        if ((firstTierint >= 90 && firstTierint <= 99) || isEpicSpecial)
         {
             thisCharAnim.SetBool("charSpecialAnim1", charSpecialAnim1Bool);
         }
@@ -221,7 +221,7 @@ public class charAScript : MonoBehaviour
 
     void SetCharacterController()
     {
-        if (firstTierint <= 74)
+        if (firstTierint <= 59)
         {
             //Debug.Log("Common Tier - HIT - 2");
             thisCharSR.color = gameManagerScript.Instance.randomColorListArray[secondTierint];
@@ -232,7 +232,7 @@ public class charAScript : MonoBehaviour
 
         // }
         //epic
-        else if (firstTierint >= 75 && firstTierint <= 94)
+        else if (firstTierint >= 60 && firstTierint <= 89)
         {
             //Debug.Log("Epic Tier - HIT - 2 " + secondTierint);
             thisCharAnim.runtimeAnimatorController = gameManagerScript.Instance.animControllerListEpic[secondTierint];
@@ -250,7 +250,7 @@ public class charAScript : MonoBehaviour
 
         }
         //legendary
-        else if (firstTierint >= 95 && firstTierint <= 99)
+        else if (firstTierint >= 90 && firstTierint <= 99)
         {
             //Debug.Log("Legendary Tier - HIT - 2 " + secondTierint);
             thisCharAnim.runtimeAnimatorController = gameManagerScript.Instance.animControllerListLegendary[secondTierint];
@@ -281,20 +281,20 @@ public class charAScript : MonoBehaviour
         // Legendary 5% Epic 20% Normal 75%
         firstTierint = Random.Range(0, 101); // Returns 0-100
 
-        // Common 75% (0-74)
-        if (firstTierint <= 74)
+        // Common 60% (0-59)
+        if (firstTierint <= 59)
         {
             secondTierint = Random.Range(0, gameManagerScript.Instance.randomColorListArray.Length);
             Debug.Log("Common Tier - HIT");
         }
-        // Epic 20% (75-94)
-        else if (firstTierint >= 75 && firstTierint <= 94)
+        // Epic 30% (60-89)
+        else if (firstTierint >= 60 && firstTierint <= 89)
         {
             secondTierint = Random.Range(0, gameManagerScript.Instance.animControllerListEpic.Count);
             Debug.Log("Epic Tier - HIT " + secondTierint);
         }
-        // Legendary 5% (95-99)
-        else if (firstTierint >= 95 && firstTierint <= 99)
+        // Legendary 10% (90 -99)
+        else if (firstTierint >= 90 && firstTierint <= 99)
         {
             secondTierint = Random.Range(0, gameManagerScript.Instance.animControllerListLegendary.Count);
             Debug.Log("Legendary Tier - HIT " + secondTierint);

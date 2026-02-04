@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 77223c7b3592d174baa6c235ee2759ca
+guid: a5b6841123017c746a7c0421cd8d56c4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: costcoEpic_0
+      name: smiskiEpic_0
       rect:
         serializedVersion: 2
         x: 83
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b963257d012e4d43897c7e56670ad23
-      internalID: -1773553544
+      spriteID: 7b51d1ba0a26faa40b84554552292736
+      internalID: -425207690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_1
+      name: smiskiEpic_1
       rect:
         serializedVersion: 2
         x: 286
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad545342e9fa32848ac74db33d840226
-      internalID: -1504258825
+      spriteID: 27676c0715ac1014db697cd9bfbf2211
+      internalID: -2081672319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_2
+      name: smiskiEpic_2
       rect:
         serializedVersion: 2
         x: 494
-        y: 620
+        y: 619
         width: 91
-        height: 109
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab9e3e1199b40c5418d035c2314afd8d
-      internalID: 1820237829
+      spriteID: f4748b2a06d3ba44ea89a0bd6e49cce8
+      internalID: 908993267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_3
+      name: smiskiEpic_3
       rect:
         serializedVersion: 2
         x: 84
@@ -200,19 +200,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bfb4e76a0ab8c845b8cf34d55fd3cf9
-      internalID: 1839216014
+      spriteID: c2b9c6fe93b59f945b39b110d8b76edf
+      internalID: -2131544983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_4
+      name: smiskiEpic_4
       rect:
         serializedVersion: 2
         x: 285
         y: 448
-        width: 118
+        width: 116
         height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 262d6ef6b29f18142b606ea1ccf78a01
-      internalID: -261316945
+      spriteID: 3f73b13e4cda3e340aa0cab0ded01659
+      internalID: -1533722746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_5
+      name: smiskiEpic_5
       rect:
         serializedVersion: 2
         x: 494
-        y: 437
+        y: 438
         width: 131
-        height: 92
+        height: 91
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,19 +242,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 884a01314afdb324196f832968aa7e6b
-      internalID: -1794483729
+      spriteID: 7f0ef05855781df469b8099fbcb2605b
+      internalID: -1133822501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_7
+      name: smiskiEpic_7
       rect:
         serializedVersion: 2
-        x: 81
+        x: 83
         y: 270
-        width: 96
+        width: 95
         height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -263,19 +263,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a23fe557e17aca4989e14ec8ea1c007
-      internalID: -904214925
+      spriteID: 466a2e6ff86f7a645ab9fddb460e56a9
+      internalID: -360449066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_9
+      name: smiskiEpic_8
       rect:
         serializedVersion: 2
         x: 292
         y: 270
-        width: 118
+        width: 117
         height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -284,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aecd50847d0415c41a72b06d0151357f
-      internalID: -485318848
+      spriteID: a201bbae4d2016d4ebcaa8f48818f725
+      internalID: -155115448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_10
+      name: smiskiEpic_9
       rect:
         serializedVersion: 2
         x: 495
@@ -305,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a51112b52a46684fa0db228dd464e8c
-      internalID: -645944122
+      spriteID: 81f901d553c8b2d4a96ba6352bd749e1
+      internalID: 741979685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_11
+      name: smiskiEpic_10
       rect:
         serializedVersion: 2
         x: 83
@@ -326,20 +326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abbec622e6b799a4880ef1402f09178c
-      internalID: 565122150
+      spriteID: 48261ad865d1d864899fa0bea66cac4d
+      internalID: -1697688560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: costcoEpic_12
+      name: smiskiEpic_11
       rect:
         serializedVersion: 2
         x: 274
         y: 96
         width: 116
-        height: 126
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,8 +347,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 516e6b207d2c76a4298bf538f0e74ecb
-      internalID: -1979423389
+      spriteID: a44b8411d8e361e4693e68dba61d1371
+      internalID: -42410757
       vertices: []
       indices: 
       edges: []
@@ -364,19 +364,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      costcoEpic_0: -1773553544
-      costcoEpic_1: -1504258825
-      costcoEpic_10: -645944122
-      costcoEpic_11: 565122150
-      costcoEpic_12: -1979423389
-      costcoEpic_2: 1820237829
-      costcoEpic_3: 1839216014
-      costcoEpic_4: -261316945
-      costcoEpic_5: -1794483729
-      costcoEpic_6: 765057192
-      costcoEpic_7: -904214925
-      costcoEpic_8: -334262476
-      costcoEpic_9: -485318848
+      smiskiEpic_0: -425207690
+      smiskiEpic_1: -2081672319
+      smiskiEpic_10: -1697688560
+      smiskiEpic_11: -42410757
+      smiskiEpic_2: 908993267
+      smiskiEpic_3: -2131544983
+      smiskiEpic_4: -1533722746
+      smiskiEpic_5: -1133822501
+      smiskiEpic_6: -569274333
+      smiskiEpic_7: -360449066
+      smiskiEpic_8: -155115448
+      smiskiEpic_9: 741979685
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
