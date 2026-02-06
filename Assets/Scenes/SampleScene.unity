@@ -1453,10 +1453,19 @@ MonoBehaviour:
   - {fileID: -1214649713, guid: 23bfcfea332f0da4c828f5a09f5f0245, type: 3}
   - {fileID: -1773553544, guid: 77223c7b3592d174baa6c235ee2759ca, type: 3}
   - {fileID: -425207690, guid: a5b6841123017c746a7c0421cd8d56c4, type: 3}
+  - {fileID: 961832263, guid: dc2b339549b8bf84db03eda6ae15fec0, type: 3}
+  - {fileID: 19428794, guid: 89b99cc8e3c114c43b6d53bd44df4a4c, type: 3}
+  - {fileID: 1869531280, guid: df02c0e784db83a4b8202b91718073a8, type: 3}
+  - {fileID: -1193625686, guid: a9966c5e5f161274aac609422d00ef4a, type: 3}
   imageListLegendary:
   - {fileID: 1837163861, guid: 3d15f37ecc434ff468e662dc9a988ef2, type: 3}
   - {fileID: -560562015, guid: 7384deea6b66070408cd9ca99d4832ef, type: 3}
   - {fileID: -609962935, guid: 7384deea6b66070408cd9ca99d4832ef, type: 3}
+  - {fileID: -1795306670, guid: 2bd7fc7aa6f38074e8750f68901b9d2f, type: 3}
+  - {fileID: 2074567183, guid: 0e95a8cc62bad79418abf377ab3747ce, type: 3}
+  - {fileID: -1977873359, guid: b972bc65ce15b354aa5482b11c513037, type: 3}
+  - {fileID: -1445373676, guid: 4c7096ca1d341d64683400c2877bfc38, type: 3}
+  - {fileID: -1219314551, guid: c35d9d39c48ff74488efdfe099694746, type: 3}
   userNum: 1
   numPage: 0
   totalNum: 0
@@ -2781,13 +2790,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876237161}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.027451038, g: 1, b: 0, a: 0}
+  m_Color: {r: 0.21807075, g: 1, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3217,9 +3226,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1977653365}
   - {fileID: 901896671}
   - {fileID: 876237162}
+  - {fileID: 1977653365}
   - {fileID: 1712085210}
   - {fileID: 1952637354}
   - {fileID: 473125886}
@@ -3793,10 +3802,19 @@ MonoBehaviour:
   - {fileID: 9100000, guid: e782d1d359ddc8646bb4fe0444a78d25, type: 2}
   - {fileID: 9100000, guid: 8c7a9aa9a90611e4a8a5ca3069ce834b, type: 2}
   - {fileID: 9100000, guid: 16f26ddec1ce5d24a92d2451b9ecb20a, type: 2}
+  - {fileID: 9100000, guid: a91bd2052245239449c0768fc9494412, type: 2}
+  - {fileID: 9100000, guid: 014d99b8e906fbd4fb6b083d34ea94b6, type: 2}
+  - {fileID: 9100000, guid: 0b948091059de6f4783d32612b1e4ef1, type: 2}
+  - {fileID: 9100000, guid: c70e9b8fd96359b44851d98112dee5fa, type: 2}
   animControllerListLegendary:
   - {fileID: 9100000, guid: 0fa6a947ff6c42f4c86b7020145f2197, type: 2}
   - {fileID: 9100000, guid: ba532b0b3ec34cf428e7771974209bb4, type: 2}
   - {fileID: 9100000, guid: a4c9a03872eb0954ba88e16684b29b4d, type: 2}
+  - {fileID: 9100000, guid: de4353efa35719442944a3e8be0d65c5, type: 2}
+  - {fileID: 9100000, guid: 8e1806c967d0ee04180ddd912ed9b38a, type: 2}
+  - {fileID: 9100000, guid: ce0390a0f4960c148801006b634ce996, type: 2}
+  - {fileID: 9100000, guid: 0371503899d243e4bbe324cd39d135a6, type: 2}
+  - {fileID: 9100000, guid: 00238cc9243b10e479deb05b7a5023e2, type: 2}
   randomColorListArray:
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 0, g: 0, b: 1, a: 1}
