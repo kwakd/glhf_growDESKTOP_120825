@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.Animations;
 
 
 
@@ -32,18 +31,18 @@ public class gameManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            int rangeX = 15;
-            int rangeY = 7;
-            Vector2 randomPosition = new Vector2(
-            Random.Range(-rangeX, rangeX),
-            Random.Range(-rangeY, rangeY)
-            );
-            charAScript tempChar;
-            tempChar = Instantiate(testSpawn, randomPosition, Quaternion.identity);
-            totalCharList.Add(tempChar);
-        }
+        // if (Input.GetKeyDown(KeyCode.E))
+        // {
+        //     int rangeX = 15;
+        //     int rangeY = 7;
+        //     Vector2 randomPosition = new Vector2(
+        //     Random.Range(-rangeX, rangeX),
+        //     Random.Range(-rangeY, rangeY)
+        //     );
+        //     charAScript tempChar;
+        //     tempChar = Instantiate(testSpawn, randomPosition, Quaternion.identity);
+        //     totalCharList.Add(tempChar);
+        // }
 
         // if (Input.GetKeyDown(KeyCode.O) && totalCharList.Count != 0)
         // {

@@ -4,7 +4,6 @@ using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine.SceneManagement;
 using System.IO;
-using UnityEditor.U2D.Animation;
 
 [System.Serializable]
 public class saveSystemScript : MonoBehaviour

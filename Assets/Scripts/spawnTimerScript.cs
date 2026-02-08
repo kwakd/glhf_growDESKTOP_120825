@@ -43,10 +43,10 @@ public class SpawnTimerScript : MonoBehaviour
         UpdateButtonDisplay();
         
         // Press Q to reset timer (for testing/debugging)
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            ResetTimer();
-        }
+        // if (Input.GetKeyDown(KeyCode.Q))
+        // {
+        //     ResetTimer();
+        // }
     }
 
     void LoadLastSpawnDate()
