@@ -57,7 +57,7 @@ public class gameManagerScript : MonoBehaviour
 
     }
 
-    void ToggleCalendarMenu()
+    public void ToggleCalendarMenu()
     {
         if(!calendarMenuToggle)
         {
