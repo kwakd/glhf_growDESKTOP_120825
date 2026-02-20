@@ -21,7 +21,6 @@ public class calendarMenuScript : MonoBehaviour
     public int userNum = 1;
     public int numPage = 0;
     public int totalNum = 0;
-    public int globalIndex;
 
     private string userInput;
 
@@ -246,7 +245,7 @@ public class calendarMenuScript : MonoBehaviour
     void OnCalendarItemClick(int charIndex)
     {
         gameManagerScript gmScript = FindObjectOfType<gameManagerScript>();
-        globalIndex = charIndex;
+        gameManagerScript.Instance.globalIndex = charIndex;
         Debug.Log("Character Name: " + gmScript.totalCharList[charIndex].charNameText);
         Debug.Log("Date: " + gmScript.totalCharList[charIndex].timeNowMonth + "/" + 
                 gmScript.totalCharList[charIndex].timeNowDay + "/" + 
@@ -302,6 +301,6 @@ public class calendarMenuScript : MonoBehaviour
     public void ReadStringInput(string s)
     {
         userInput = s;
-        gameManagerScript.Instance.totalCharList[globalIndex].charLongText = userInput;
+        gameManagerScript.Instance.totalCharList[gameManagerScript.Instance.globalIndex].charLongText = userInput;
     }
 }

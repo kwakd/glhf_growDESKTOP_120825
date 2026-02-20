@@ -17,6 +17,13 @@ public class gameManagerScript : MonoBehaviour
     public bool detailMenuToggle;
     public GameObject calendarMenu;
     public GameObject DeletePage;
+    public GameObject detailPageMenu;
+    public charAScript selectedCharacter;
+    public int globalIndex;
+
+    public Sprite baseSprite;
+    public List<Sprite> imageListEpic = new List<Sprite>();
+    public List<Sprite> imageListLegendary = new List<Sprite>();
 
     // Start is called before the first frame update
     void Awake()
@@ -88,7 +95,7 @@ public class gameManagerScript : MonoBehaviour
     }
     public void DeleteCharacterButton()
     {
-        totalCharList[calendarMenuScript.Instance.globalIndex].GetComponent<charAScript>().DeleteCharacterA();
+        totalCharList[globalIndex].GetComponent<charAScript>().DeleteCharacterA();
         closeMenuScript.Instance.ExitPage();
     }
 }

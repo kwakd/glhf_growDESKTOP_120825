@@ -152,7 +152,7 @@ public class simpleImageUploadScript : MonoBehaviour
             return;
         }
         
-        int charIndex = calendarMenuScript.Instance.globalIndex;
+        int charIndex = gameManagerScript.Instance.globalIndex;
         
         // Save image data directly to character
         if (charIndex >= 0 && charIndex < gameManagerScript.Instance.totalCharList.Count)
@@ -213,7 +213,7 @@ public class simpleImageUploadScript : MonoBehaviour
     {
         if (calendarMenuScript.Instance == null) return;
         
-        int charIndex = calendarMenuScript.Instance.globalIndex;
+        int charIndex = gameManagerScript.Instance.globalIndex;
         
         if (charIndex >= 0 && charIndex < gameManagerScript.Instance.totalCharList.Count)
         {

@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random=UnityEngine.Random;
 using Object=UnityEngine.Object;
-
+using TMPro;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class charAScript : MonoBehaviour
@@ -70,11 +71,11 @@ public class charAScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(thisCharRB.velocity.x > 0 && !charFacingRight)
+        if(thisCharRB.linearVelocity.x > 0 && !charFacingRight)
         {
             FlipSprite();
         }
-        else if(thisCharRB.velocity.x < 0 && charFacingRight)
+        else if(thisCharRB.linearVelocity.x < 0 && charFacingRight)
         {
             FlipSprite();
         }
@@ -114,35 +115,35 @@ public class charAScript : MonoBehaviour
             {
                 case 0:
                 // character goes RIGHT
-                thisCharRB.velocity = new Vector2(transform.localScale.x * charMoveDistance, 0);
+                thisCharRB.linearVelocity = new Vector2(transform.localScale.x * charMoveDistance, 0);
                 break;         
                 case 1:
                     // character goes LEFT  
-                    thisCharRB.velocity = new Vector2(transform.localScale.x * charMoveDistance * -1, 0);
+                    thisCharRB.linearVelocity = new Vector2(transform.localScale.x * charMoveDistance * -1, 0);
                     break;
                 case 2:
                     // character goes UP   
-                    thisCharRB.velocity = new Vector2(0, transform.localScale.y * charMoveDistance);
+                    thisCharRB.linearVelocity = new Vector2(0, transform.localScale.y * charMoveDistance);
                     break;
                 case 3:
                     // character goes DOWN
-                    thisCharRB.velocity = new Vector2(0, transform.localScale.y * -charMoveDistance);
+                    thisCharRB.linearVelocity = new Vector2(0, transform.localScale.y * -charMoveDistance);
                     break;
                 case 4:
                     // character goes UP-RIGHT
-                    thisCharRB.velocity = new Vector2(transform.localScale.x * charMoveDistance, transform.localScale.y * charMoveDistance);
+                    thisCharRB.linearVelocity = new Vector2(transform.localScale.x * charMoveDistance, transform.localScale.y * charMoveDistance);
                     break;
                 case 5:
                     // character goes UP-LEFT
-                    thisCharRB.velocity = new Vector2(transform.localScale.x * charMoveDistance * -1, transform.localScale.y * charMoveDistance);
+                    thisCharRB.linearVelocity = new Vector2(transform.localScale.x * charMoveDistance * -1, transform.localScale.y * charMoveDistance);
                     break;  
                 case 6:
                     // character goes DOWN-RIGHT
-                    thisCharRB.velocity = new Vector2(transform.localScale.x * charMoveDistance, transform.localScale.y * -charMoveDistance);
+                    thisCharRB.linearVelocity = new Vector2(transform.localScale.x * charMoveDistance, transform.localScale.y * -charMoveDistance);
                     break;  
                 case 7:
                     // character goes DOWN-LEFT
-                    thisCharRB.velocity = new Vector2(transform.localScale.x * charMoveDistance * -1, transform.localScale.y * -charMoveDistance);
+                    thisCharRB.linearVelocity = new Vector2(transform.localScale.x * charMoveDistance * -1, transform.localScale.y * -charMoveDistance);
                     break;
                 default:
                     break;
@@ -151,7 +152,7 @@ public class charAScript : MonoBehaviour
         // DONT DO ANYTHING
         else if(charStatus >= 3 && charStatus <= 8)
         {
-            thisCharRB.velocity = new Vector2(0, 0);
+            thisCharRB.linearVelocity = new Vector2(0, 0);
         }
         // SPECIAL ACTION
         else if(charStatus >= 9 && charStatus <= 9)
@@ -169,15 +170,15 @@ public class charAScript : MonoBehaviour
             switch (charStatusSpecial)
             {
                 case 0:
-                    thisCharRB.velocity = new Vector2(0, 0);
+                    thisCharRB.linearVelocity = new Vector2(0, 0);
                     charDanceAnim1Bool = true;
                     break;
                 case 1:
-                    thisCharRB.velocity = new Vector2(0, 0);
+                    thisCharRB.linearVelocity = new Vector2(0, 0);
                     charDanceAnim2Bool = true;
                     break;
                 case 2:
-                    thisCharRB.velocity = new Vector2(0, 0);
+                    thisCharRB.linearVelocity = new Vector2(0, 0);
                     charSpecialAnim1Bool = true;
                     break;
                 default:
@@ -197,7 +198,7 @@ public class charAScript : MonoBehaviour
 
     void CharAnimate()
     {
-        thisCharAnim.SetFloat("charMoveMagnitude", thisCharRB.velocity.magnitude);
+        thisCharAnim.SetFloat("charMoveMagnitude", thisCharRB.linearVelocity.magnitude);
         thisCharAnim.SetBool("charDanceAnim1", charDanceAnim1Bool);
         thisCharAnim.SetBool("charDanceAnim2", charDanceAnim2Bool);
 
@@ -311,5 +312,59 @@ public class charAScript : MonoBehaviour
     {
         customImageData = imageData;
         hasCustomImage = (imageData != null && imageData.Length > 0);
+    }
+
+    void OnMouseDown()
+    {
+        if (gameManagerScript.Instance.detailMenuToggle || gameManagerScript.Instance.calendarMenuToggle)
+            return;
+
+        gameManagerScript.Instance.globalIndex = gameManagerScript.Instance.totalCharList.IndexOf(this);
+
+        closeMenuScript.Instance.exitMenuButton.GetComponent<Button>().interactable = false;
+
+        GameObject detailPageMenu = gameManagerScript.Instance.detailPageMenu;
+        detailPageMenu.SetActive(true);
+        gameManagerScript.Instance.detailMenuToggle = true;
+        closeMenuScript.Instance.ActivateExitImage();
+
+        Image detailImage = detailPageMenu.transform.GetChild(0).GetComponent<Image>();
+        detailImage.preserveAspect = true;
+
+        if (firstTierint <= 59)
+        {
+            detailImage.sprite = gameManagerScript.Instance.baseSprite;
+            detailImage.color = gameManagerScript.Instance.randomColorListArray[secondTierint];
+        }
+        else if (firstTierint >= 60 && firstTierint <= 89)
+        {
+            detailImage.sprite = gameManagerScript.Instance.imageListEpic[secondTierint];
+            detailImage.color = Color.white;
+        }
+        else if (firstTierint >= 90 && firstTierint <= 99)
+        {
+            detailImage.sprite = gameManagerScript.Instance.imageListLegendary[secondTierint];
+            detailImage.color = Color.white;
+        }
+
+        detailPageMenu.transform.GetChild(1).GetComponent<TMP_Text>().text =
+            timeNowMonth + "/" + timeNowDay + "/" + timeNowYear;
+
+        TMP_InputField inputField = detailPageMenu.GetComponentInChildren<TMP_InputField>();
+        inputField.text = charLongText;
+
+        if (simpleImageUploadScript.Instance != null)
+            simpleImageUploadScript.Instance.LoadImageForCharacter(gameManagerScript.Instance.globalIndex);
+    }
+
+    void OnMouseUp()
+    {
+        StartCoroutine(ReenableExitButton());
+    }
+
+    IEnumerator ReenableExitButton()
+    {
+        yield return new WaitForSeconds(0.1f);
+        closeMenuScript.Instance.exitMenuButton.GetComponent<Button>().interactable = true;
     }
 }
