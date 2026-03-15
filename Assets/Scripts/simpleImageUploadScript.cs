@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using SimpleFileBrowser;
+using TMPro;
 
 public class simpleImageUploadScript : MonoBehaviour
 {
@@ -177,23 +178,33 @@ public class simpleImageUploadScript : MonoBehaviour
         
         charAScript character = gameManagerScript.Instance.totalCharList[charIndex];
         
+        // Grab the Text child of DPuserImage
+        TMP_Text labelText = userImage.GetComponentInChildren<TMP_Text>();
+
         if (character.hasCustomImage && character.customImageData != null && character.customImageData.Length > 0)
         {
             Texture2D texture = new Texture2D(2, 2);
             texture.LoadImage(character.customImageData);
-            
             ApplyTexture(texture);
-            
+
+            // Hide the text since a custom image is loaded
+            if (labelText != null)
+                labelText.enabled = false;
+
             Debug.Log("Custom image loaded for character " + charIndex);
         }
         else
         {
-            // No custom image saved - show placeholder or leave empty
             if (userImage != null)
             {
                 userImage.sprite = null;
-                userImage.color = new Color(0.8f, 0.8f, 0.8f, 0.3f); // Light gray placeholder
+                userImage.color = new Color(0.8f, 0.8f, 0.8f, 0.3f);
             }
+
+            // Show the text since there is no custom image
+            if (labelText != null)
+                labelText.enabled = true;
+
             Debug.Log("No custom image for character " + charIndex);
         }
     }

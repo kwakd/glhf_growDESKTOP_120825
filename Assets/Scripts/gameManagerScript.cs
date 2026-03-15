@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 
 
@@ -18,6 +19,7 @@ public class gameManagerScript : MonoBehaviour
     public GameObject calendarMenu;
     public GameObject DeletePage;
     public GameObject detailPageMenu;
+    public TMP_Text instructionText;
     public charAScript selectedCharacter;
     public int globalIndex;
 
@@ -61,7 +63,11 @@ public class gameManagerScript : MonoBehaviour
         // {
         //     ToggleCalendarMenu();
         // }
-
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            if (instructionText != null)
+                instructionText.enabled = !instructionText.enabled;
+        }
     }
 
     public void ToggleCalendarMenu()

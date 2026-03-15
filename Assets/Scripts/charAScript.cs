@@ -275,7 +275,7 @@ public class charAScript : MonoBehaviour
         timeNowYear = DateTime.Now.Year;
         timeNowTime = (DateTime.Now.Hour + ":" + DateTime.Now.Minute).ToString();
         
-        charLongText = "this character was made at " + timeNowTime;
+        charLongText = "this character was made at " + timeNowTime + '\n' + "click here to start typing!";
 
         // firstTier Roll - TIER
         // Legendary 5% Epic 20% Normal 75%
